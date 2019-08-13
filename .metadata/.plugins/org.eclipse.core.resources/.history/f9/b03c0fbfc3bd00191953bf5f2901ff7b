@@ -1,0 +1,9 @@
+package com.example;
+
+public class teste {
+	public static double RENDIMENTO = 4.8;
+	
+	public static void main(String[] args) {
+		
+	}
+}

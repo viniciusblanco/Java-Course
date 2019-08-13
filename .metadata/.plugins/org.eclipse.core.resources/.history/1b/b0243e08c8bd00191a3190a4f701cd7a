@@ -1,0 +1,26 @@
+package com.example;
+
+import java.util.Scanner;
+
+public class teste {
+	public final static double RENDIMENTO = 0.48/100;
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double valorInicial;
+		double depositosMensais;
+		System.out.println("Deposito Inicial: R$ ");
+		valorInicial = sc.nextDouble();
+		
+		System.out.println("Depositos Mensais: R$ ");
+		depositosMensais = sc.nextDouble();
+		
+		System.out.println("|| MES\t||    DEPOSITO\t ||     VALOR\t ||");
+		System.out.println("||  0\t||  R$ " +  depositosMensais + "\t ||  R$ " + valorInicial + "\t ||");
+		for (int i = 1; i <= 24; i++) {
+			valorInicial = RENDIMENTO * valorInicial + depositosMensais + valorInicial;
+			System.out.printf("||  %d\t||  R$ %.2f\t || R$ %.2f\t ||\n", i, depositosMensais, valorInicial);
+		}
+
+	}
+}

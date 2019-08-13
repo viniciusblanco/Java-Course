@@ -1,0 +1,15 @@
+package com.example;
+
+import java.util.Scanner;
+
+public class teste {
+	public final static double RENDIMENTO = 4.8;
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		double valorInicial;
+		
+		RENDIMENTO;
+	}
+}
